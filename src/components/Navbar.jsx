@@ -19,7 +19,8 @@ const Navbar = ({ handleAboutClick }) => {
            <Link to="/Services">SERVICES</Link>
             </li>
           <li className="cursor-pointer hover:text-blue-600 transition" onClick={ handleAboutClick }>
-            ABOUT US
+           <Link to="/#aboutus">ABOUT US</Link>
+ {/* ABOUT US */}
           </li>
         </ul>
       </nav>
