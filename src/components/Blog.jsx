@@ -6,28 +6,28 @@ const Blog = () => {
   const [posts, setPosts] = useState([
     {
       id: 1,
-      title: 'Getting Started with React',
-      date: 'May 15, 2023',
-      excerpt: 'Learn the basics of React and how to create your first component.',
-      content: 'React is a JavaScript library for building user interfaces...',
-      category: 'React'
+      title: 'Foundation in Residential Building Construction',
+      date: 'Jun 25, 2025',
+      excerpt: 'The foundation is the most important component of any house,',
+      content: "The foundation is the most important component of any house, as it supports the whole weight of the building and provides stability, strength, and longevity over a period of time. Foundations in residential construction are usually two kinds: shallow foundations like isolated, strip, or combined footings, and deep foundations like pile foundations, where the soil bearing capacity is weak at shallow levels. According to IS: 1080-1985 and IS: 1904-1986, foundation design and construction shall comply with certain safety and engineering standards. Investigation of the soil, as stipulated by IS: 1892-1979, is necessary prior to the final determination of the type of foundation. The minimum depth of a foundation should be 1 meter to prevent differential settlement (IS: 1080), and the bearing capacity of the soil shall be determined with the aid of IS: 6403-1981. The normal procedure of construction involves excavation, PCC (Plain Cement Concrete) laying, reinforcement and shuttering placement, and lastly casting RCC footing with good quality concrete (generally M20 grade or higher according to IS: 456-2000) followed by a 7-14-day curing process. Properly constructed foundations, under expert guidance and as per IS code standards, guarantee your property's long-term safety and operation. Keep in mind, a solid home begins with a better foundation.",
+      category: 'Foundation'
     },
-    {
-      id: 2,
-      title: 'Mastering Tailwind CSS',
-      date: 'June 2, 2023',
-      excerpt: 'Tips and tricks for using Tailwind CSS effectively in your projects.',
-      content: 'Tailwind CSS is a utility-first CSS framework that allows you...',
-      category: 'CSS'
-    },
-    {
-      id: 3,
-      title: 'State Management in 2023',
-      date: 'June 18, 2023',
-      excerpt: 'Comparing different state management solutions for React applications.',
-      content: 'When building complex React applications, you often need...',
-      category: 'React'
-    }
+    // {
+    //   id: 2,
+    //   title: 'Mastering Tailwind CSS',
+    //   date: 'June 2, 2023',
+    //   excerpt: 'Tips and tricks for using Tailwind CSS effectively in your projects.',
+    //   content: 'Tailwind CSS is a utility-first CSS framework that allows you...',
+    //   category: 'CSS'
+    // },
+    // {
+    //   id: 3,
+    //   title: 'State Management in 2023',
+    //   date: 'June 18, 2023',
+    //   excerpt: 'Comparing different state management solutions for React applications.',
+    //   content: 'When building complex React applications, you often need...',
+    //   category: 'React'
+    // }
   ]);
 
   const [selectedPost, setSelectedPost] = useState(null);
@@ -43,7 +43,7 @@ const Blog = () => {
 
   return (
     <div className="blog-container p-6 max-w-6xl mx-auto">
-      <h1 className="text-4xl font-bold text-center mb-8">Our Blog</h1>
+      <h1 className="text-4xl font-bold text-center mb-8 text-blue-700">Our Blog</h1>
       
       {/* Category Filter */}
       <div className="flex flex-wrap gap-2 mb-8 justify-center">
@@ -94,7 +94,7 @@ const Blog = () => {
           <h2 className="text-2xl font-bold mt-2 mb-2">{selectedPost.title}</h2>
           <p className="text-gray-500 text-sm mb-6">{selectedPost.date}</p>
           <div className="prose max-w-none">
-            <p>{selectedPost.content}</p>
+            <p className='text-justify'>{selectedPost.content}</p>
             {/* In a real app, you might use dangerouslySetInnerHTML for HTML content */}
           </div>
         </div>

@@ -14,7 +14,7 @@ const Footer = () => {
                         <p className="mt-2 text-sm font-bold text-gray-700">The right way to build your Home</p>
                     </div>
                     <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-                        <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+                        {/* <div className="lg:w-1/4 md:w-1/2 w-full px-4">
                             <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
                             <nav className="list-none mb-10">
                                 <li>
@@ -64,29 +64,40 @@ const Footer = () => {
                                     <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
                                 </li>
                             </nav>
-                        </div>
+                        </div> */}
                         <div className="lg:w-1/4 md:w-1/2 w-full px-4">
                             <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CONTACTS</h2>
-                            <nav className="list-none mb-10">
+                            <nav className="list-none mb-10 space-y-2">
                                 <li>
-                                    <a className="text-gray-600 hover:text-gray-800 flex items-center gap-2" href='https://wa.link/0v69u0'
+                                    <a
+                                        className="text-gray-600 hover:text-gray-800 flex items-center gap-2 justify-center md:justify-start"
+                                        href='https://wa.link/0v69u0'
                                         target='_blank'
                                         rel="noopener noreferrer"
-                                    ><img src="what.gif" className="w-5 h-5" />Whatsapp</a>
+                                    >
+                                        <img src="what.gif" className="w-5 h-5" /> Whatsapp
+                                    </a>
                                 </li>
                                 <li>
-                                    <a className="text-gray-600 hover:text-gray-800 flex items-center gap-2"><img src="phone.gif" className="w-5 h-5" alt="Phone Icon" />6000916651</a></li>
+                                    <span className="text-gray-600 hover:text-gray-800 flex items-center gap-2 justify-center md:justify-start">
+                                        <img src="phone.gif" className="w-5 h-5" alt="Phone Icon" /> 6000916651
+                                    </span>
+                                </li>
                                 <li>
-                                    <a className="text-gray-600 hover:text-gray-800 flex items-center gap-2"
+                                    <a
+                                        className="text-gray-600 hover:text-gray-800 flex items-center gap-2 justify-center md:justify-start"
                                         href="https://mail.google.com/mail/?view=cm&to=info@brickbybricks.com"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                    ><img src="email.gif" alt="" className="w-5 h-5"/>Email</a>
+                                    >
+                                        <img src="email.gif" alt="" className="w-5 h-5" /> Email
+                                    </a>
                                 </li>
                             </nav>
                         </div>
                     </div>
                 </div>
+
                 <div className="bg-gray-100">
                     <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
                         <p className="text-gray-500 text-sm text-center sm:text-left">© 2020 Brick by Brick. All rights reserved</p>
