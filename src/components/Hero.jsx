@@ -132,7 +132,7 @@ const Hero = () => {
       </div>
 
       <button className="absolute bottom-5 sm:bottom-7 left-1/2 -translate-x-1/2 text-lg sm:text-xl md:text-2xl font-semibold text-white bg-blue-600 px-4 sm:px-6 py-2 rounded-full hover:bg-blue-700 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg active:scale-95">
-        Get a Quote
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfKwLav-wMdqrsiYIIK8nu_MNRtgUnXk5o1agfxIQ0oq3c6lA/viewform?usp=sharing&ouid=101926013262304070687" target='_blank' rel="noreferrer">Get a Quote</a>
       </button>
     </div>
   )
