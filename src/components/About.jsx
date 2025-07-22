@@ -112,7 +112,7 @@ const About = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <h2 className="text-3xl font-semibold text-blue-700 mb-4">Our Mission (Written by me)</h2>
+          <h2 className="text-3xl font-semibold text-blue-700 mb-4">Our Mission</h2>
           <p className="text-gray-700 text-lg leading-relaxed text-justify">
             At Brick by Bricks, our mission is to redefine the homebuilding experience by blending trust, quality, and care
             into every step of the process. We are committed to constructing beautiful, durable homes that reflect the dreams
